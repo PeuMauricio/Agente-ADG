@@ -166,7 +166,7 @@ async def verificar_saude_api():
 async def servir_pagina_principal():
     """Serve a interface do usuário (frontend) na rota raiz."""
     try:
-        caminho_html = os.path.join("frontend", "index.html")
+        caminho_html = "index.html"
         with open(caminho_html, encoding="utf-8") as f:
             conteudo_html = f.read()
         return HTMLResponse(content=conteudo_html, status_code=200)

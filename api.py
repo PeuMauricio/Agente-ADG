@@ -179,7 +179,7 @@ async def servir_pagina_principal():
 
 # --- Montagem de Diretórios Estáticos ---
 # Permite que o FastAPI sirva arquivos CSS, JS e imagens diretamente.
-app.mount("/static", StaticFiles(directory="frontend"), name="static")
+app.mount("/static", StaticFiles(directory="."), name="static")
 app.mount("/outputs", StaticFiles(directory="outputs"), name="outputs")
 
 # --- Ponto de Entrada para Execução ---

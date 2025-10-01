@@ -68,7 +68,7 @@ class GeradorVisualizacaoTool(BaseTool):
     description: str = (
         "Cria uma visualização gráfica (gráfico) a partir do DataFrame 'df' e a salva como um arquivo de imagem. "
         "A entrada deve ser um dicionário contendo 'tipo_grafico', 'colunas' e 'titulo'. "
-        "Tipos suportados: histograma, dispersao, boxplot, barras, multiplos_histogramas."
+        "Tipos suportados: histograma, dispersao, boxplot, barras, multiplos_histogramas, pizza, linha."
     )
 
     class SchemaGeradorVisualizacao(BaseModel):
